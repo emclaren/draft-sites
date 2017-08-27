@@ -41,21 +41,65 @@ $(window).scroll(function() {
     	$("#body-height").css({
             'min-height':  1000 + scrollTop +"px"
      })
-   	 // $(".show2").attr({
-     //        "src": "img/horse" + i + ".jpg",
-     //        "alt": i
-     //    })
+   	 $(".show2").attr({
+            "src": "img/horse" + i + ".jpg",
+            "alt": i
+        })
 })
 
 
+var title
+    $("#about").click(function () {
+         $('.text').css({
+         'display': "none"
+        })
+        $('#about-text').css({
+         'display': "block"
+        })
+         $('.show').css({
+            'opacity': ".2"
+        })
+        $('.show2').css({
+            'opacity': ".1"
+        })
+    });
+
+
+
+var title
+    $("#cv").click(function () {
+        $('.text').css({
+         'display': "none"
+        })
+        $('#cv-text').css({
+         'display': "block"
+        })
+         $('.show').css({
+            'opacity': ".2"
+        })
+        $('.show2').css({
+            'opacity': ".1"
+        })
+    });
+
+
+var title
+    $("#contact").click(function () {
+        $('.contact-list').toggle({
+      })
+    });
 
 var navselect
-    $("#about").click(function () {
-        $('.show').css({
-         'left': 300 
+    $(".title-heading").click(function () {
+        $('.text').css({
+         'display': "none"
         })
-
-        // $(this).children("ul").toggle();
+         $('.show').css({
+            'opacity': ".8"
+        })
+        $('.show2').css({
+            'opacity': ".5"
+        })
     });
 
 
