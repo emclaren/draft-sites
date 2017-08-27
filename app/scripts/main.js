@@ -45,8 +45,37 @@ $(window).scroll(function() {
      //        "src": "img/horse" + i + ".jpg",
      //        "alt": i
      //    })
-
 })
+
+
+
+var navselect
+    $("#about").click(function () {
+        $('.show').css({
+         'left': 300 
+        })
+
+        // $(this).children("ul").toggle();
+    });
+
+
+
+// $(window).scroll(function() {
+//     var scrollTop = $(this).scrollTop()
+//     console.log(scrollTop)
+
+//     var i = ((scrollTop / 10)%10).toFixed(0)
+//     if (i % 1 == 0)
+//         $(".show").attr({
+//             "src": "img/horse" + i + ".jpg",
+//             "alt": i
+//         })
+//     	$("#body-height").css({
+//             'min-height':  1000 + scrollTop +"px"
+//      })
+
+
+// })
 
 
 
