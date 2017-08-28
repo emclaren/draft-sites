@@ -54,18 +54,23 @@ $(window).scroll(function() {
 
   var i = ((scrollTop / 10)%10).toFixed(0)
   if (i % 1 == 0)
-    $(".show").attr({
+    $(".background-animation").attr({
       "src": "img/horse" + i + ".jpg",
       "alt": i
     })
   $("#body-height").css({
     'min-height':  1000 + scrollTop +"px"
   })
-  $(".show2").attr({
+  $(".background-animation-shadow").attr({
     "src": "img/horse" + i + ".jpg",
     "alt": i
   })
 })
+
+
+
+
+
 
 
 var title
