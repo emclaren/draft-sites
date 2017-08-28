@@ -5,7 +5,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Elgin-Skye</title>
-  <link href="styles/lightbox.css" rel="stylesheet">
+  <link href="/styles/lightbox.css" rel="stylesheet">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -15,59 +15,120 @@
 
 
 <body>
-  <div class= "sidebar">
-    <div class= "site-header" >
-      <h1 class="title-heading">Elgin-Skye McLaren</h1>
-      <h2 class="subheading">developer // ux researcher // artist</h2>
+  <div class="content-frame">
+    <div class= "sidebar">
+      <div class= "site-header close-content" >
+        <h1 class="title-heading">Elgin-Skye McLaren</h1>
+        <h2 class="subheading">developer // ux researcher // artist</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li>
+            <p><a href="#" id="about" class="open-content">about</a></p>
+          </li>
+          <li>
+            <p><a href="#" id="portfolio" class="open-content">portfolio</a></p>
+          </li>
+          <li>
+            <p><a href="#" id="cv" class="open-content">cv</a></p>
+          </li>
+          <li>
+            <p><a href="#" id="contact">contact</a></p>
+            <ul class="contact-list">
+              <li><a href="http://linkedin.com/in/elginskye" target="_blank">-linkedin</a></li>
+              <li><a href="http://twitter.com/elginskye" target="_blank">-twitter</a></li>
+              <li><a href="http://github/elginskye" target="_blank">-github</a></li>
+              <li><a href="http://linkedin.com/in/elginskye" target="_blank">-email</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="title-navigation">
-      <ul>
-        <li>
-          <p><a href="#" id="about">about</a></p>
-        </li>
-        <li>
-          <p><a href="#" id "portfolio">portfolio</a></p>
-        </li>
-        <li>
-          <p><a href="#" id="cv">cv</a></p>
-        </li>
-        <li>
-          <p><a href="#" id="contact">contact</a></p>
-          <ul class="contact-list">
-            <li><a href="http://linkedin.com/in/elginskye" target="_blank">-linkedin</a></li>
-            <li><a href="http://twitter.com/elginskye" target="_blank">-twitter</a></li>
-            <li><a href="http://github/elginskye" target="_blank">-github</a></li>
-            <li><a href="http://linkedin.com/in/elginskye" target="_blank">-email</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+
+    <div>
+
+      <img class="background-animation-shadow" alt="0" src="img/horse1.jpg" />
+      <img class="background-animation" alt="0" src="img/horse1.jpg" />
+
+    </div>
+
+    <div class="about flex-container close-content">
+
+      <div class="text flex-item" id="about-text">
+        <!-- <a href="#"> -->
+        <div id="close-button">
+          <button   type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- </a> -->
+        <h1>About</h1>
+        <p>Elgin-Skye McLaren is a Masters of Science student in the Tangible Computing Lab at Simon Fraser University. Designer, developer, researcher, Elgin-Skye's interest are in Brain Computer Interfacing, Embodied Computing, Sound and Artificial Intelligence.  </p>
+        <p>Elgin-Skye McLaren is a creative coder and researcher based in Vancouver, BC. She is currently pursuing her M.Sc. at the School of Interactive Arts and Technology at Simon Fraser University.</p>
+        <p>Elgin's research interests include: Human-centered design, brain-computer interfacing, design evaluation, and technological embodiment within artistic performance.</p>
+    </div>
   </div>
 
-<div>
-<img class="background-animation" alt="0" src="img/horse1.jpg" />
-<img class="background-animation-shadow" alt="0" src="img/horse1.jpg" />
-</div>
 
-<div class="about flex-container">
+<div class="portfolio flex-container close-content">
 
-  <div class="text flex-item" id="about-text">
-    <!-- <a href="#"> -->
-    <div id="close-button">
-      <button   type="button" class="close" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
+      <div class="text flex-item" id="portfolio-text">
+        <!-- <a href="#"> -->
+        <div id="close-button">
+          <button   type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- </a> -->
+        <h2>Web Development</h2>
+        <div class="portfolio-container">
+        <img class="portfolio-item" alt="0" src="img/mindfull-site.png" />
+        <img class="portfolio-item" alt="0" src="img/two-weirdos.png" />
+        <img class="portfolio-item" alt="0" src="img/resto-bar.png" />
+        </div>
+        </br>
+        <h2>App & Program Development</h2>
+        <div class="portfolio-container">
+        <img class="portfolio-item" alt="0" src="img/aliens.png" />
+        <img class="portfolio-item" alt="0" src="img/alpha-beta.png" />
+        <img class="portfolio-item" alt="0" src="img/ext-int-clock.png" />
+                <img class="portfolio-item" alt="0" src="img/dhsi-program.png" />
+        <img class="portfolio-item" alt="0" src="img/audio-matic.png" />
+        </div>
+        </br>
+
+        <h2>Presentations</h2>
+        <div class="portfolio-container">
+        <img class="portfolio-item" alt="0" src="img/idc2017logo.png" />
+   <!--      <img class="portfolio-item" alt="0" src="img/alpha-beta.png" />
+        <img class="portfolio-item" alt="0" src="img/external-internal-clock.png" /> -->
     </div>
-    <!-- </a> -->
-    <h1>About</h1>
-    <p>Elgin-Skye McLaren is a Masters of Science student in the Tangible Computing Lab at Simon Fraser University. Designer, developer, researcher, Elgin-Skye's interest are in Brain Computer Interfacing, Embodied Computing, Sound and Artificial Intelligence.  </p>
-  </p>
-  Elgin-Skye McLaren is a creative coder and researcher based in Vancouver, BC. She is currently pursuing her M.Sc. at the School of Interactive Arts and Technology at Simon Fraser University.
-</p>
-</p>
-Elgin's research interests include: Human-centered design, brain-computer interfacing, design evaluation, and technological embodiment within artistic performance.
-</p>
-</div>
+     </br>
+       <h2>Sketches / Wireframing</h2>
+        <div class="portfolio-container">
+        <img class="portfolio-item" alt="0" src="img/vizjournal.jpg" />
+        <img class="portfolio-item" alt="0" src="img/alpha-beta.png" />
+        <img class="portfolio-item" alt="0" src="img/external-internal-clock.png" />
+    </div>
+  </div>
+
+<!-- 
+  <div class="cv flex-container close-content">
+
+      <div class="text flex-item" id="cv-text">
+        <div id="close-button">
+          <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+       
+        <h1>CV</h1>
+        <h1>Work</h1>
+        <h1>Work</h1>
+        <h1>Work</h1>
+    </div>
+  </div> 
+ -->
 </div>
 
 
@@ -133,16 +194,16 @@ Elgin's research interests include: Human-centered design, brain-computer interf
 
 <!-- May be redundant -->
 
-<script src="/scripts/jquery-3.2.1.min.js"></script> 
+<!-- <script src="/scripts/jquery-3.2.1.min.js"></script> -->
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
-<!-- 
+ 
 <script src="/bower_components/jquery/dist/jquery.js"></script>
--->
+
 <script src="/bower_components/popper.js/dist/umd/popper.js"></script>
 <script src="/bower_components/modernizr/modernizr.js"></script>
-<script src="scripts/lightbox.js"></script>
+
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -163,5 +224,7 @@ Elgin's research interests include: Human-centered design, brain-computer interf
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
+
+<script src="scripts/lightbox-plus-jquery.js"></script>
 </body>
 </html>
