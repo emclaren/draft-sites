@@ -104,6 +104,8 @@ body{
   position:fixed;
   opacity: .8;
   left:230px;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s,
 // transform: scaleX(-1);
 
 }
@@ -124,6 +126,8 @@ body{
   // // transform: scaleX(-1);
   // filter: FlipH;
   // -ms-filter: "FlipH";
+      -webkit-transition: opacity .3s;
+    transition: opacity .3s,
 
 
 }
@@ -212,7 +216,7 @@ a{
 .flex-container{
 
   width:80%;
-  z-index:500;
+  z-index:10;
   color: #242424;
   position:fixed;
       display: -webkit-box;
@@ -238,7 +242,8 @@ a{
   .text{
     width: 700px; 
     display:none; 
-
+    -webkit-transition: display 3s;
+    transition: display 3s,
   }
   ul{
     list-style:none;
@@ -253,3 +258,29 @@ ul.contact-list{
   font-size:14px;
 
 }
+#about-text{    
+  -webkit-transition: display 10s;
+    transition: display 10s,
+}
+// button.close{
+//   height: 30px;
+//   z-index:3000;
+//    cursor: pointer; 
+//    cursor: hand;
+//    border: orange 2px solid;
+//  }
+
+button.close:hover{
+  cursor: pointer; 
+   cursor: hand;
+
+ }
+
+ // #close-button{
+ //    cursor: pointer; 
+ //   cursor: hand;
+ //    border: orange 2px solid;
+ //    overflow:auto;
+ //    pointer-events: auto;
+ //    z-index:3000;
+ // }
