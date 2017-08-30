@@ -260,11 +260,7 @@ ul.contact{
 .flex-container{
   margin:20px;
   color: #242424;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
+
   -webkit-box-align: center;
   -webkit-align-items: center;
   -moz-box-align: center;
@@ -280,10 +276,20 @@ ul.contact{
   right: 0;
   bottom: 0;
   left:0;
+ @media screen and (min-width: 48em) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
   .text{
-    width: 700px; 
+
     -webkit-transition: display 3s;
-    transition: display 3s,
+    transition: display 3s;
+     @media screen and (min-width: 48em) {
+    width: 700px;
+}
   }
   ul{
     list-style:none;
@@ -424,6 +430,14 @@ h1, {
     text-align: center;
     margin: auto;
   }
+  a{
+    text-decoration:none;
+  }
 
 }
 
+
+// .test{
+//   display:block;
+//   width:100%;
+// }
