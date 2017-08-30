@@ -58,19 +58,24 @@ $(window).scroll(function() {
       "src": "img/horse" + i + ".jpg",
       "alt": i
     })
-  $(".content-frame").css({
-    'min-height':  1000 + scrollTop +"px"
-  })
   $(".background-animation-shadow").attr({
     "src": "img/horse" + i + ".jpg",
     "alt": i
   })
 })
 
+var lastI
+$(window).scroll(function() {
+  var scrollTop = $(this).scrollTop()
+  console.log(scrollTop)
+  var i = ((scrollTop / 10)%10).toFixed(0)
+  if (i % 1 == 0  && screen.width>768)
 
+  $(".content-frame").css({
+    'min-height':  1000 + scrollTop +"px"
+  })
 
-
-
+})
 
 
 
@@ -85,6 +90,7 @@ $(window).scroll(function() {
 
 
 var openContent
+if (screen.width>768){
 $(".open-content").click(function () {
   $('.text').fadeOut({
    'display': "none"
@@ -97,8 +103,10 @@ $(".open-content").click(function () {
 })
 });
 
+}
 
 var closeContent
+if (screen.width>768){
 $(".close-content").click(function () {
   $('.background-animation').css({
     'opacity': ".8"
@@ -110,23 +118,30 @@ $(".close-content").click(function () {
    'display': "none"
  })
 });
-
+}
 var closeContent
+if (screen.width>768){
 $("content-frame").click(function () {
   $('.text').fadeOut({
    'display': "none"
  })
 });
+}
 
-var about
-$("#about").click(function () {
- $('#about-text').fadeIn({
-   'display': "none"
- })
-});
+//this one is a-ok, but removed for testing
+// var about
+// if (screen.width>768){
+// $("#about").click(function () {
+//  $('#about-text').fadeIn({
+//    'display': "none"
+//  })
+// });
+// }
+
 
 
 var title
+if (screen.width>768){
 $("#portfolio").click(function () {
 
   $('#portfolio-text').fadeIn({
@@ -134,8 +149,10 @@ $("#portfolio").click(function () {
  })
 
 });
+}
 
 var title
+if (screen.width>768){
 $("#cv").click(function () {
 
   $('#cv-text').fadeIn({
@@ -143,7 +160,8 @@ $("#cv").click(function () {
  })
 
 });
-
+}
+// }
 
 // var title
 // $("#cv").click(function () {
@@ -162,10 +180,82 @@ $("#cv").click(function () {
 // });
 
 
-var title
-$("#contact").click(function () {
-  $('.contact-list').toggle({
-  })
+// var title
+// if (screen.width>768){
+// $("#contact").click(function () {
+//   $('.contact-list').toggle({
+//   })
+// });
+// }
+
+
+// // document.querySelector('#about').scrollIntoView({ 
+// //   behavior: 'smooth' 
+// // });
+
+// var elmnt = document.getElementById("about-text");
+
+// function scrollToTop() {
+//     elmnt.scrollIntoView(true); // Top
+// }
+
+
+//** smooth scrolling
+
+   $(function() {
+      $('a[href*=#]:not([href=#])').on('click', function() {
+         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+            if (target.length) {
+               $('html,body').animate({
+                  scrollTop: target.offset().top
+               }, 700);
+
+               return false;
+            }
+         }
+      });
+   });
+
+
+
+
+
+
+jQuery(document).ready(function() {
+ 
+var offset = 250;
+ 
+var duration = 300;
+ 
+jQuery(window).scroll(function() {
+ 
+if (jQuery(this).scrollTop() > offset) {
+ 
+jQuery('.back-to-top').fadeIn(duration);
+ 
+} else {
+ 
+jQuery('.back-to-top').fadeOut(duration);
+ 
+}
+ 
 });
-
-
+ 
+ 
+ 
+jQuery('.back-to-top').click(function(event) {
+ 
+event.preventDefault();
+ 
+jQuery('html, body').animate({scrollTop: 0}, duration);
+ 
+return false;
+ 
+})
+ 
+});
+ 
+ 
