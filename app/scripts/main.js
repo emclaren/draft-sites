@@ -1,3 +1,23 @@
+
+   $(function() {
+      $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+            if (target.length) {
+               $('html,body').animate({
+                  scrollTop: target.offset().top
+               }, 700);
+
+               return false;
+            }
+         }
+      });
+   });
+
+ 
+
 // console.log('\'Allo \'Allo!');
 
 
@@ -207,57 +227,39 @@ $('#cv').click(function () {
 
 
 
-// jQuery(document).ready(function() {
+jQuery(document).ready(function() {
  
-// var offset = 250;
+var offset = 250;
  
-// var duration = 300;
+var duration = 300;
  
-// jQuery(window).scroll(function() {
+jQuery(window).scroll(function() {
  
-// if (jQuery(this).scrollTop() > offset) {
+if (jQuery(this).scrollTop() > offset) {
  
-// jQuery('.back-to-top').fadeIn(duration);
+jQuery('.back-to-top').fadeIn(duration);
  
-// } else {
+} else {
  
-// jQuery('.back-to-top').fadeOut(duration);
+jQuery('.back-to-top').fadeOut(duration);
  
-// }
+}
  
-// });
+});
  
  
  
-// jQuery('.back-to-top').click(function(event) {
+jQuery('.back-to-top').click(function(event) {
  
-// event.preventDefault();
+event.preventDefault();
  
-// jQuery('html, body').animate({scrollTop: 0}, duration);
+jQuery('html, body').animate({scrollTop: 0}, duration);
  
-// return false;
+return false;
  
-// })
+})
  
-// });
+});
  
-
- 
-   $(function() {
-      $('a[href*=#]:not([href=#])').on('click', function() {
-         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-
-            if (target.length) {
-               $('html,body').animate({
-                  scrollTop: target.offset().top
-               }, 700);
-
-               return false;
-            }
-         }
-      });
-   });
 
  
