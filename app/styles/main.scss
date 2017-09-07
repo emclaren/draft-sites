@@ -224,12 +224,14 @@ display:none
     z-index: 30;
     text-align:left;
     ul{
-      padding: 0;
-      padding-top: 20px;
 
+      padding-top: 20px;
+      border-bottom: none;
+    margin: 0;
     }
     li{
      font-size:1rem;
+           padding: 0px;
    }
    p{
     margin-bottom: .75rem;
@@ -237,6 +239,7 @@ display:none
   }
   a{
     color: #242424;
+    border-bottom:none;
   }
 }
 
@@ -287,7 +290,7 @@ ul.contact{
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  // position: fixed;
+  
   top:0;
   right: 0;
   bottom: 0;
@@ -299,6 +302,9 @@ ul.contact{
     display: -ms-flexbox;
     display: flex;
   }
+          @media (min-width: 1200px) {
+      position: fixed;
+    }
   .text{
 
     -webkit-transition: display 3s;
@@ -308,6 +314,8 @@ ul.contact{
     }
     @media (min-width: 1200px) {
       width: 700px;
+      left:300;
+
     }
   }
   ul{
@@ -385,6 +393,7 @@ h1, {
   @media (min-width: 1200px)  {
     margin:0;
     border-bottom:none;
+    display:none;
   }
 
 }

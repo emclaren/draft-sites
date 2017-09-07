@@ -115,6 +115,9 @@ $('.open-content').click(function () {
   $('.text').fadeOut({
    'display': 'none'
  })
+   $('.content').css({
+  'display': 'inline-block'
+})
  $('.background-animation').css({
   'opacity': '.2'
 })
@@ -134,6 +137,9 @@ $('.close-content').click(function () {
   $('.background-animation-shadow').css({
     'opacity': '.5'
   })
+     $('.content').css({
+  'display': 'inline-block'
+})
   $('.text').fadeOut({
    'display': 'none'
  })
@@ -200,13 +206,13 @@ $('#cv').click(function () {
 // });
 
 
-// var title
-// if (screen.width>768){
-// $("#contact").click(function () {
-//   $('.contact-list').toggle({
-//   })
-// });
-// }
+var title
+if (screen.width>768){
+$("#contact").click(function () {
+  $('.contact-list').toggle({
+  })
+});
+}
 
 
 // // document.querySelector('#about').scrollIntoView({ 
