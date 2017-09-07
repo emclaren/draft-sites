@@ -17,22 +17,20 @@
 <body>
   <div class="content-frame">
     <div class= "sidebar">
-      <div class= "site-header close-content" >
+      <header class= "site-header close-content" >
         <h1 class="title-heading">Elgin-Skye McLaren</h1>
         <h2 class="subheading">developer // ux researcher // artist</h2>
-      </div>
+      </header>
       <img class="background-animation mobile" alt="0" src="img/horse1.jpg" />
+
+      <!--Navigation -->
       <nav class="sidebar-nav">
         <ul>
           <li>
-            <!--  -->
             <p><a href="#about-text" id="about" class="open-content">about</a></p>
           </li>
           <li>
             <p><a href="#cv-text" id="cv" class="open-content">cv</a></p>
-          </li>
-          <li>
-            <p><a href="#portfolio-text" id="portfolio" class="open-content">portfolio</a></p>
           </li>
           <li>
             <p><a href="#contact-text" id="contact">contact</a></p>
@@ -47,45 +45,36 @@
       </nav>
     </div>
 
+<!-- Horse Animation -->
     <div>
-
       <img class="background-animation-shadow" alt="0" src="img/horse1.jpg" />
       <img class="background-animation" alt="0" src="img/horse1.jpg" />
-
     </div>
 
+<!-- About Section -->
     <div class="about flex-container close-content content">
-
       <div class="text flex-item" id="about-text">
-        <!-- <a href="#"> -->
         <div id="close-button">
           <button   type="button" class="close" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <!-- </a> -->
-
         <h2>About</h2>
-
-        <p>Elgin-Skye McLaren is a creative coder and researcher based in Vancouver, BC. She is currently an Msc student in Simon Fraser University's <!-- <a href="http://siat.sfu.ca">School of Interactive Arts and Technology</a>. --> Her research interests are Brain Computer Interfacing, Embodied Computing, Sound, and Artificial Intelligence.</p>
+        <p>Elgin-Skye McLaren is a creative coder and researcher based in Vancouver, BC. She is currently an Msc student in Simon Fraser University's <a href="http://siat.sfu.ca">School of Interactive Arts and Technology</a>. Her research interests are Brain Computer Interfacing, Embodied Computing, Sound, and Artificial Intelligence.</p>
         <p>Elgin's research interests include: Human-centered design, brain-computer interfacing, design evaluation, and technological embodiment within artistic performance.</p>
         <a class='back-to-top'  href='#'><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
       </div>
-
     </div>
 
 
-
+<!-- Resume Section -->
     <div class="cv flex-container close-content content">
-
       <div class="text flex-item" id="cv-text">
-        <!-- <a href="#"> -->
         <div id="close-button">
           <button   type="button" class="close" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <!-- </a> -->
         <h2>CV</h2>
         <h3>Work Experience</h3>
         <ul>
@@ -98,9 +87,7 @@
           <li>+Master of Science - Simon Fraser University</li>
           <li>+Bachelor of Commerce - Concordia University</li>
         </ul>
-
         <h3>Hackathons</h3>
-
         <ul>
           <li>+BrainHacks</li>
           <li>+Lumohack</li>
@@ -117,106 +104,67 @@
         <a class='back-to-top'  href='#'><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
       </div>
     </div>
-<!-- 
-    <div class="portfolio flex-container close-content content">
-      <div class="text flex-item" id="portfolio-text">
+
+
+<!-- Mobile Contact Section -->
+    <div class="contact flex-container close-content content">
+      <div class="text flex-item" id="contact-text">
         <div id="close-button">
           <button   type="button" class="close" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <h2>Portfolio</h2>
-        <h3>Web Development</h3>
-        <div class="portfolio-container">
-          <img class="portfolio-item" alt="0" src="img/mindfull-site.png" />
-          <img class="portfolio-item" alt="0" src="img/two-weirdos.png" />
-        </div>
-        <h3>App & Program Development</h3>
-        <div class="portfolio-container">
-          <img class="portfolio-item" alt="0" src="img/aliens.png" />
-          <img class="portfolio-item" alt="0" src="img/alpha-beta.png" />
-        </div>
-        <h3>Presentations</h3>
-        <div class="portfolio-container">
-          <img class="portfolio-item" alt="0" src="img/idc2017logo.png" />
-        </div>
-        <h3>Sketches / Wireframing</h3>
-        <div class="portfolio-container">
-          <img class="portfolio-item" alt="0" src="img/vizjournal.jpg" />
-          <img class="portfolio-item" alt="0" src="img/alpha-beta.png" />
-        </div>
+        <h2>Contact</h2>
+        <ul class="contact" >
+          <li><a href="http://linkedin.com/in/elginskye" target="_blank">linkedin</a></li>
+          <li><a href="http://twitter.com/elginskye" target="_blank">twitter</a></li>
+          <li><a href="https://github.com/emclaren" target="_blank">github</a></li>
+          <li><a href="mailto:emclaren@sfu.ca">email</a></li>
+        </ul>
       </div>
-    <a class='back-to-top'  href='#'><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-  </div>
- -->
-
-  <div class="contact flex-container close-content content">
-
-    <div class="text flex-item" id="contact-text">
-      <!-- <a href="#"> -->
-      <div id="close-button">
-        <button   type="button" class="close" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <!-- </a> -->
-      <h2>Contact</h2>
-      <ul class="contact" >
-        <li><a href="http://linkedin.com/in/elginskye" target="_blank">linkedin</a></li>
-        <li><a href="http://twitter.com/elginskye" target="_blank">twitter</a></li>
-        <li><a href="https://github.com/emclaren" target="_blank">github</a></li>
-        <li><a href="mailto:emclaren@sfu.ca">email</a></li>
-      </ul>
-      <!--      <a class='back-to-top' href='#'><i class="fa fa-chevron-up" aria-hidden="true"></i></a> -->
     </div>
-
   </div>
 
 
-</div>
+
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
 
 
 
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/popper.js/dist/umd/popper.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-  e.src='https://www.google-analytics.com/analytics.js';
-  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-  ga('create','UA-XXXXX-X');ga('send','pageview');
-</script>
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/button.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+  <!-- endbuild -->
 
-<!-- May be redundant -->
-
-<!-- <script src="/scripts/jquery-3.2.1.min.js"></script> -->
-
-<!-- build:js scripts/vendor.js -->
-<!-- bower:js -->
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/popper.js/dist/umd/popper.js"></script>
-<script src="/bower_components/modernizr/modernizr.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
-
-<!-- build:js scripts/plugins.js -->
-<script src="/bower_components/bootstrap/js/dist/util.js"></script>
-<script src="/bower_components/bootstrap/js/dist/alert.js"></script>
-<script src="/bower_components/bootstrap/js/dist/button.js"></script>
-<script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
-<script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
-<script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
-<script src="/bower_components/bootstrap/js/dist/modal.js"></script>
-<script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
-<script src="/bower_components/bootstrap/js/dist/tab.js"></script>
-<script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
-<script src="/bower_components/bootstrap/js/dist/popover.js"></script>
-<!-- endbuild -->
-
-<!-- build:js scripts/main.js -->
-<script src="scripts/main.js"></script>
-<!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
 
 </body>
 </html>

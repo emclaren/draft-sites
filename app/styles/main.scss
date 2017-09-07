@@ -47,73 +47,73 @@ p, p a{
   font-family:'Open Sans', sans-serif;
   font-weight:400}
 
-/* Customize container */
-@media (min-width: 48em) {
-  .container {
-    max-width: 46rem;
+  /* Customize container */
+  @media (min-width: 48em) {
+    .container {
+      max-width: 46rem;
+    }
   }
-}
-.container-narrow > hr {
-  margin: 2rem 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: .05rem solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: .75rem 1.5rem;
-  font-size: 1.5rem;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 3rem 0;
-}
-.marketing p + h4 {
-  margin-top: 1.5rem;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 48em) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
+  .container-narrow > hr {
+    margin: 2rem 0;
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 2rem;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
+
+  /* Main marketing message and sign up button */
   .jumbotron {
-    border-bottom: 0;
+    text-align: center;
+    border-bottom: .05rem solid #e5e5e5;
   }
-}
+  .jumbotron .btn {
+    padding: .75rem 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  /* Supporting marketing content */
+  .marketing {
+    margin: 3rem 0;
+  }
+  .marketing p + h4 {
+    margin-top: 1.5rem;
+  }
+
+  /* Responsive: Portrait tablets and up */
+  @media screen and (min-width: 48em) {
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    /* Space out the masthead */
+    .header {
+      margin-bottom: 2rem;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+      border-bottom: 0;
+    }
+  }
 
 
 
-body{
-  background-color: #FFF;
+  body{
+    background-color: #FFF;
     @media (min-width: 576px) { 
-     background-color:purple;
-  }
-  @media (min-width: 768px) { 
-     background-color:pink;
-  }
+     // background-color:purple;
+   }
+   @media (min-width: 768px) { 
+     // background-color:pink;
+   }
    @media (min-width: 992px) { 
     background-color:green
-}
+  }
   @media (min-width: 1200px) { 
     background-color:orange}
-}
+  }
 
-.content-frame{
-  max-height:200px;
-    @media (min-width: 992px)  {
+  .content-frame{
+  // max-height:200px;
+  @media (min-width: 992px)  {
     min-height:1000px;
   }
 }
@@ -121,7 +121,7 @@ body{
 
 .site-header{
  margin:20px;
-   @media (min-width: 992px)  {
+ @media (min-width: 992px)  {
    margin:0;
  }
 }
@@ -138,7 +138,7 @@ body{
   width:100%;
   margin-bottom: .2rem;
   text-transform: uppercase;
-   @media (min-width: 992px)   {
+  @media (min-width: 992px)   {
     font-size:20px;
   }
 }
@@ -151,7 +151,7 @@ body{
   top:14%;
   font-family: 'Lato';
   width:100%;
-    @media (min-width: 992px) {
+  @media (min-width: 992px) {
     font-size:16px;
   }
 }
@@ -169,7 +169,7 @@ body{
   }
 
 
-   @media (min-width: 992px) {
+  @media (min-width: 992px) {
     left:230px;
     width:90%;
     height:100%;
@@ -180,7 +180,7 @@ body{
 }
 .background-animation-shadow{
   display:none;
-    @media (min-width: 992px)  {
+  @media (min-width: 992px)  {
    background:black;
    width:100%;
    height:100%;
@@ -214,7 +214,7 @@ body{
     border-bottom:1px solid #242424;
     text-decoration:none;
   }
-    @media (min-width: 992px)  {
+  @media (min-width: 992px)  {
     position: fixed; 
     z-index: 30;
     text-align:left;
@@ -287,20 +287,23 @@ ul.contact{
   right: 0;
   bottom: 0;
   left:0;
-  @media (min-width: 992px)  {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-}
+  @media (min-width: 768px)  {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .text{
 
     -webkit-transition: display 3s;
     transition: display 3s;
-      @media (min-width: 992px) {
-    width: 700px;
-}
+        @media (min-width: 768px) {
+      width: 550px;
+    }
+    @media (min-width: 992px) {
+      width: 700px;
+    }
   }
   ul{
     list-style:none;
@@ -323,7 +326,7 @@ ul.contact{
   width:100%;
   height:233px;
   padding: 10px 0;
-    @media (min-width: 992px) {
+  @media (min-width: 992px) {
     width: 150px;
     height:100px;
   }
@@ -342,7 +345,7 @@ h1, {
 // }
 
 
-  @media (min-width: 992px)  {
+@media (min-width: 992px)  {
   width:90%;
   z-index:10;
   position:fixed;
@@ -371,9 +374,9 @@ h1, {
 
   }
   h2{
-  margin:20px 0;
-  font-size:2.5rem;
-}
+    margin:20px 0;
+    font-size:2.5rem;
+  }
 
 }
 
@@ -382,7 +385,7 @@ h1, {
  //  border-right: 1px dotted #ccc;
  //  }
 
-  @media (min-width: 992px)  {
+ @media (min-width: 992px)  {
 
 
   .sidebar{
