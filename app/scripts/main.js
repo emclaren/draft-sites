@@ -19,7 +19,7 @@ $(function() {
 });
 
 //*Horse Animation- desktop **/
-var mouseX0 = 0;
+var mouseY0 = 0;
 var i =5;
 
 document.onmousemove = function(e) {
@@ -33,31 +33,23 @@ function mousemov() {
  $('.background-animation').attr({
         'src': 'img/horse' + i + '.jpg',
       });
-  console.log ("mouseX1: " + mouseX1)
-  console.log ("mouseX0: " + mouseX0)
-  if ( mouseX1 > mouseX0){  
-     for (i=0 , i < 10 , i++){
-     
-    }
-  // i++
 
-// }
-
-
-
-
-
-   // console.log(i);
-
-   console.log("Change picture increase");
+  console.log ("mouseX1: " + mouseY1)
+  console.log ("mouseX0: " + mouseY0)
+  if ( mouseY1 > mouseY0){  
+    i++;
+     console.log("Change picture increase");
  }
- mouseX0 = mouseX1;
+ else if (mouseY1 < mouseY0){
+  i--;
+ }
+ mouseY0 = mouseY1;
 }
 
 
 window.onload = function() {
   setInterval(mousemov, 1000);
-  var mouseX0 = 0;
+  var mouseY0 = 0;
 }
 
 
