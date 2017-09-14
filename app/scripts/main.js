@@ -1,101 +1,97 @@
 
-   $(function() {
-      $('a[href*=\\#]:not([href=\\#])').on('click', function() {
-         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+//** Scrolling to links **//
 
-            if (target.length) {
-               $('html,body').animate({
-                  scrollTop: target.offset().top
-               }, 700);
+$(function() {
+  $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 
-               return false;
-            }
-         }
+    if (target.length) {
+     $('html,body').animate({
+      scrollTop: target.offset().top
+    }, 700);
+
+     return false;
+   }
+ }
+});
+});
+
+//*Horse Animation- desktop **/
+var mouseX0 = 0;
+var i =5;
+
+document.onmousemove = function(e) {
+  var event = e || window.event;
+  window.mouseX1 = event.clientX;
+  window.mouseY1 = event.clientY;
+
+}
+
+function mousemov() {
+ $('.background-animation').attr({
+        'src': 'img/horse' + i + '.jpg',
       });
-   });
+  console.log ("mouseX1: " + mouseX1)
+  console.log ("mouseX0: " + mouseX0)
+  if ( mouseX1 > mouseX0){  
+     for (i=0 , i < 10 , i++){
+     
+    }
+  // i++
 
- 
-
-// console.log('\'Allo \'Allo!');
-
-
-// var num = 1;
-// $('img').attr("src","http://sendamessage.to/dist/images/fistbump-700/1.jpg");
-
-// $(window).scroll(function () { 
-//   num = $(window).scrollTop() / 3;
-
-//  if( parseInt(num) === num){
-
-//       $('img').attr("src","http://sendamessage.to/dist/images/fistbump-700/"+ num +".jpg");}
-//   else{}
-
-//   if (num<1){
-//     $('img').attr("src","http://sendamessage.to/dist/images/fistbump-700/1.jpg");
-//   }
-//     if (num>30){
-//     $('img').attr("src","http://sendamessage.to/dist/images/fistbump-700/30.jpg");
-//       $("img").css("position","absolute");
-//   }
-// });
+// }
 
 
+
+
+
+   // console.log(i);
+
+   console.log("Change picture increase");
+ }
+ mouseX0 = mouseX1;
+}
+
+
+window.onload = function() {
+  setInterval(mousemov, 1000);
+  var mouseX0 = 0;
+}
+
+
+
+//*Horse Animation- mobile**/
+
+// var lastI
 // $(window).scroll(function() {
-//     var scrollTop = $(this).scrollTop()
-//     console.log(scrollTop)
-
+//   var scrollTop = $(this).scrollTop()
+//     // console.log(scrollTop)
 //     var i = ((scrollTop / 10)%10).toFixed(0)
 //     if (i % 1 == 0)
-//         $(".show").attr({
-//             "src": "img/horse" + i + ".jpg",
-//             "alt": i
-//         })
-//      $("#body-height").css({
-//             'min-height':  1000 + scrollTop +"px"
-//      })
+//       $('.background-animation').attr({
+//         'src': 'img/horse' + i + '.jpg',
+//         'alt': i
+//       })
+//     $('.background-animation-shadow').attr({
+//       'src': 'img/horse' + i + '.jpg',
+//       'alt': i
+//     })
+//   })
 
+// var lastI
+// $(window).scroll(function() {
+//   var scrollTop = $(this).scrollTop()
+//     // console.log(scrollTop)
+//     var i = ((scrollTop / 10)%10).toFixed(0)
+//     if (i % 1 == 0  && screen.width>768)
 
-// })
+//       $('.content-frame').css({
+//         'min-height':  1000 + scrollTop +'px'
+//       })
 
-
-
-
-// var myElement = document.querySelector("#body-height");
-// myElement.style.min-height = "30000";
-
-
-
-var lastI
-$(window).scroll(function() {
-  var scrollTop = $(this).scrollTop()
-  console.log(scrollTop)
-
-  var i = ((scrollTop / 10)%10).toFixed(0)
-  if (i % 1 == 0)
-    $('.background-animation').attr({
-      'src': 'img/horse' + i + '.jpg',
-      'alt': i
-    })
-  $('.background-animation-shadow').attr({
-    'src': 'img/horse' + i + '.jpg',
-    'alt': i
-  })
-})
-
-var lastI
-$(window).scroll(function() {
-  var scrollTop = $(this).scrollTop()
-  console.log(scrollTop)
-  var i = ((scrollTop / 10)%10).toFixed(0)
-  if (i % 1 == 0  && screen.width>768)
-
-  $('.content-frame').css({
-    'min-height':  1000 + scrollTop +'px'
-  })
-
-})
+//   })
 
 
 
@@ -111,47 +107,47 @@ $(window).scroll(function() {
 
 var openContent
 if (screen.width>768){
-$('.open-content').click(function () {
-  $('.text').fadeOut({
-   'display': 'none'
- })
-   $('.content').css({
-  'display': 'inline-block'
-})
- $('.background-animation').css({
-  'opacity': '.2'
-})
- $('.background-animation-shadow').css({
-  'opacity': '.08'
-})
-});
+  $('.open-content').click(function () {
+    $('.text').fadeOut({
+     'display': 'none'
+   })
+    $('.content').css({
+      'display': 'inline-block'
+    })
+    $('.background-animation').css({
+      'opacity': '.2'
+    })
+    $('.background-animation-shadow').css({
+      'opacity': '.08'
+    })
+  });
 
 }
 
 var closeContent
 if (screen.width>768){
-$('.close-content').click(function () {
-  $('.background-animation').css({
-    'opacity': '.8'
-  })
-  $('.background-animation-shadow').css({
-    'opacity': '.5'
-  })
-     $('.content').css({
-  'display': 'inline-block'
-})
-  $('.text').fadeOut({
-   'display': 'none'
- })
-});
+  $('.close-content').click(function () {
+    $('.background-animation').css({
+      'opacity': '.8'
+    })
+    $('.background-animation-shadow').css({
+      'opacity': '.5'
+    })
+    $('.content').css({
+      'display': 'inline-block'
+    })
+    $('.text').fadeOut({
+     'display': 'none'
+   })
+  });
 }
 var closeContent
 if (screen.width>768){
-$('content-frame').click(function () {
-  $('.text').fadeOut({
-   'display': 'none'
- })
-});
+  $('content-frame').click(function () {
+    $('.text').fadeOut({
+     'display': 'none'
+   })
+  });
 }
 
 //this one is a-ok, but removed for testing
@@ -168,24 +164,24 @@ $('content-frame').click(function () {
 
 var title
 if (screen.width>768){
-$('#portfolio').click(function () {
+  $('#portfolio').click(function () {
 
-  $('#portfolio-text').fadeIn({
-   'display': 'none'
- })
+    $('#portfolio-text').fadeIn({
+     'display': 'none'
+   })
 
-});
+  });
 }
 
 var title
 if (screen.width>768){
-$('#cv').click(function () {
+  $('#cv').click(function () {
 
-  $('#cv-text').fadeIn({
-   'display': 'none'
- })
+    $('#cv-text').fadeIn({
+     'display': 'none'
+   })
 
-});
+  });
 }
 // }
 
@@ -208,10 +204,10 @@ $('#cv').click(function () {
 
 var title
 if (screen.width>768){
-$("#contact").click(function () {
-  $('.contact-list').toggle({
-  })
-});
+  $("#contact").click(function () {
+    $('.contact-list').toggle({
+    })
+  });
 }
 
 
@@ -234,38 +230,37 @@ $("#contact").click(function () {
 
 
 jQuery(document).ready(function() {
- 
-var offset = 250;
- 
-var duration = 300;
- 
-jQuery(window).scroll(function() {
- 
-if (jQuery(this).scrollTop() > offset) {
- 
-jQuery('.back-to-top').fadeIn(duration);
- 
-} else {
- 
-jQuery('.back-to-top').fadeOut(duration);
- 
-}
- 
-});
- 
- 
- 
-jQuery('.back-to-top').click(function(event) {
- 
-event.preventDefault();
- 
-jQuery('html, body').animate({scrollTop: 0}, duration);
- 
-return false;
- 
-})
- 
-});
- 
 
- 
+  var offset = 250;
+
+  var duration = 300;
+
+  jQuery(window).scroll(function() {
+
+    if (jQuery(this).scrollTop() > offset) {
+
+      jQuery('.back-to-top').fadeIn(duration);
+
+    } else {
+
+      jQuery('.back-to-top').fadeOut(duration);
+
+    }
+
+  });
+
+
+
+  jQuery('.back-to-top').click(function(event) {
+
+    event.preventDefault();
+
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+
+    return false;
+
+  })
+
+});
+
+
