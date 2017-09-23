@@ -15,7 +15,7 @@
 
 
 <body>
-  <div class="content-frame backstretch">
+  <div class="content-frame ">
     <div class= "sidebar">
       <header class= "site-header close-content" >
         <h1 class="title-heading">Elgin-Skye McLaren</h1>
@@ -27,10 +27,10 @@
       <nav class="sidebar-nav">
         <ul>
           <li>
-            <p><a href="#about-text" id="about" class="open-content">about</a></p>
+          <p><a href="#about-text" id="about" class="open-about">about</a></p>
           </li>
           <li>
-            <p><a href="#cv-text" id="cv" class="open-content">cv</a></p>
+            <p><a href="#cv-text" id="cv" class="open-cv">cv</a></p>
           </li>
           <li>
             <p><a href="#contact-text" id="contact">contact</a></p>
@@ -45,141 +45,160 @@
       </nav>
     </div>
 
+
+
+
+    
+
     <!-- Horse Animation -->
-    <div>
-    <div class=" backstretch" > 
-  <!--     <img class="background-animation-shadow" alt="0" src="img/horse1.jpg" />
-      <img class="background-animation" alt="0" src="img/horse1.jpg" /> -->
+  <!--   <div>
+    <div class="backstretch-container">
+      <div class="backstretch background-animation" >  -->
+        <!--   <img class="background-animation-shadow" alt="0" src="img/horse1.jpg" /> -->
+        <img class="background-animation" alt="0" src="img/horse1.jpg" />
+<!--     </div>
+</div> -->
+
+
+
+<!-- About Section -->
+<div class="about flex-container close-content content">
+  <div class="text flex-item" id="about-text">
+    <div id="close-button">
+      <button   type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
+    <h2>About</h2>
+    <p>Elgin-Skye McLaren is a creative coder and researcher based in Vancouver, BC. She is currently an Msc student in Simon Fraser University's <a href="http://siat.sfu.ca">School of Interactive Arts and Technology</a>. Her research interests are Brain Computer Interfacing, Embodied Computing, Sound, and Artificial Intelligence.</p>
+    <p>Elgin's research interests include: Human-centered design, brain-computer interfacing, design evaluation, and technological embodiment within artistic performance.</p>
+    <a class='back-to-top'  href='#'><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+  </div>
+</div>
 
 
-
-    <!-- About Section -->
-    <div class="about flex-container close-content content">
-      <div class="text flex-item" id="about-text">
-        <div id="close-button">
-          <button   type="button" class="close" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <h2>About</h2>
-        <p>Elgin-Skye McLaren is a creative coder and researcher based in Vancouver, BC. She is currently an Msc student in Simon Fraser University's <a href="http://siat.sfu.ca">School of Interactive Arts and Technology</a>. Her research interests are Brain Computer Interfacing, Embodied Computing, Sound, and Artificial Intelligence.</p>
-        <p>Elgin's research interests include: Human-centered design, brain-computer interfacing, design evaluation, and technological embodiment within artistic performance.</p>
-        <a class='back-to-top'  href='#'><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+  <!-- Resume Section -->
+  <div class="cv flex-container close-content content">
+    <div class="flex-item" id="cv-text">
+      <div id="close-button">
+        <button   type="button" class="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-    </div>
-
-
-    <!-- Resume Section -->
-    <div class="cv flex-container close-content content">
-      <div class="text flex-item" id="cv-text">
-        <div id="close-button">
-          <button   type="button" class="close" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <h2>CV</h2>
-        <h3>Work Experience</h3>
-        <ul>
-          <li>+Research Assistant - Simon Fraser University</li>
-          <li>+Teaching Assistant - Simon Fraser University</li>
-          <li>+Web Developer - TELUS Digital</li>
-          <li>+Instructor/Teaching Assistant - Red Academy</li>
-          <li>+Administrative Officer - Government of Canada</li>
-          <li>+Technology Services Assistant - Concordia University</li>
-        </ul>
-        <h3>Education</h3>
-        <ul>
-          <li>+Master of Science - Simon Fraser University(in progress)</li>
-          <li>+Web Development Certificate - RED Academy</li>
-          <li>+Bachelor of Commerce - Concordia University</li>
-        </ul>
-        <h3>Awards</h3>
-        <ul>
-          <li>+Simon Fraser University Graduate Student Society Professional Development Award</li>
-          <li>+Simon Fraser Travel and Minor Research Award</li>
-          <li>+Simon Fraser University Graduate Fellowship</li>
-          <li>+Digital Humanities Summer Institute Scholarship</li>
-          <li>+Accepted (waitlist) to Banff Centre’s Interactive Technology Residency </li>
-        </ul>
-        <h3>Hackathons</h3>
-        <ul>
-          <li>+BrainHacks</li>
-          <li>+Lumohack</li>
-          <li>+VSW startup week</li>
-          <li>+Peacegeeks</li>
-        </ul>
-        <h3>Publications</h3>
-        <ul>
-          <li>Pub 1</li>
-          <li>Pub 2</li>
-          <li>Pub 3</li>
-          <li>Pub 4</li>
-        </ul>
-        <a class='back-to-top'  href='#'><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-      </div>
-    </div>
-
-
-    <!-- Mobile Contact Section -->
-    <div class="contact flex-container close-content content">
-      <div class="text flex-item" id="contact-text">
-        <div id="close-button">
-          <button   type="button" class="close" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <h2>Contact</h2>
-        <ul class="contact" >
-          <li><a href="http://linkedin.com/in/elginskye" target="_blank">linkedin</a></li>
-          <li><a href="http://twitter.com/elginskye" target="_blank">twitter</a></li>
-          <li><a href="https://github.com/emclaren" target="_blank">github</a></li>
-          <li><a href="mailto:emclaren@sfu.ca">email</a></li>
-        </ul>
-      </div>
+      <h2>CV</h2>
+      <h3>Work Experience</h3>
+      <ul>
+        <li>+Research Assistant - Simon Fraser University</li>
+        <li>+Teaching Assistant - Simon Fraser University</li>
+        <li>+Web Developer - TELUS Digital</li>
+        <li>+Instructor/Teaching Assistant - Red Academy</li>
+        <li>+Administrative Officer - Government of Canada</li>
+        <li>+Technology Services Assistant - Concordia University</li>
+      </ul>
+      <h3>Education</h3>
+      <ul>
+        <li>+Master of Science - Simon Fraser University(in progress)</li>
+        <li>+Web Development Certificate - RED Academy</li>
+        <li>+Bachelor of Commerce - Concordia University</li>
+      </ul>
+      <h3>Awards</h3>
+      <ul>
+        <li>+Simon Fraser University Graduate Student Society Professional Development Award</li>
+        <li>+Simon Fraser Travel and Minor Research Award</li>
+        <li>+Simon Fraser University Graduate Fellowship</li>
+        <li>+Digital Humanities Summer Institute Scholarship</li>
+        <li>+Accepted (waitlist) to Banff Centre’s Interactive Technology Residency </li>
+      </ul>
+      <h3>Hackathons</h3>
+      <ul>
+        <li>+BrainHacks</li>
+        <li>+Lumohack</li>
+        <li>+VSW startup week</li>
+        <li>+Peacegeeks</li>
+      </ul>
+      <h3>Publications</h3>
+      <ul>
+        <li>Pub 1</li>
+        <li>Pub 2</li>
+        <li>Pub 3</li>
+        <li>Pub 4</li>
+      </ul>
+      <a class='back-to-top'  href='#'><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
     </div>
   </div>
 
 
+  <!-- Mobile Contact Section -->
+  <div class="contact flex-container close-content content">
+    <div class="flex-item" id="contact-text">
+      <div id="close-button">
+        <button   type="button" class="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <h2>Contact</h2>
+      <ul class="contact" >
+        <li><a href="http://linkedin.com/in/elginskye" target="_blank">linkedin</a></li>
+        <li><a href="http://twitter.com/elginskye" target="_blank">twitter</a></li>
+        <li><a href="https://github.com/emclaren" target="_blank">github</a></li>
+        <li><a href="mailto:emclaren@sfu.ca">email</a></li>
+      </ul>
+    </div>
+  </div>
 
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='https://www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X');ga('send','pageview');
-  </script>
+</div>
 
 
 
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="/bower_components/jquery/dist/jquery.js"></script>
-  <script src="/bower_components/popper.js/dist/umd/popper.js"></script>
-  <script src="/bower_components/modernizr/modernizr.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
 
-  <!-- build:js scripts/plugins.js -->
-  <script src="/bower_components/bootstrap/js/dist/util.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/button.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
-  <!-- endbuild -->
 
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='https://www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/popper.js/dist/umd/popper.js"></script>
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="/bower_components/bootstrap/js/dist/util.js"></script>
+<script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+<script src="/bower_components/bootstrap/js/dist/button.js"></script>
+<script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+<script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+<script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+<script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+<script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+<script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+<script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+<script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 
 </body>
 </html>
