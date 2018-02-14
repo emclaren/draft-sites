@@ -1,1 +1,3 @@
-# my_website
+# Website Development Playground
+
+Repo of website ideas
